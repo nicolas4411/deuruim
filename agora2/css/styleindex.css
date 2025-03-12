@@ -1,0 +1,99 @@
+/* styleindex.css */
+
+body {
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#login {
+    width: 300px;
+}
+
+.form.card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+    /* Necessário para posicionar os pseudo-elementos */
+}
+
+.form.card::before,
+.form.card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 3px;
+    /* Largura das linhas laterais */
+    height: 100%;
+    background-color: #0056b3;
+    /* Cor azul */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+    /* Sombra lateral */
+}
+
+.form.card::before {
+    left: 0;
+}
+
+.form.card::after {
+    right: 0;
+}
+
+.card-header {
+    background-color: #0056b3;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+}
+
+.card-header h2 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-content-area {
+    margin-bottom: 15px;
+}
+
+.card-content-area label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.card-content-area input {
+    width: calc(100% - 12px);
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.card-footer {
+    padding: 20px;
+    text-align: center;
+}
+
+.submit {
+    background-color: #0056b3;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.submit:hover {
+    background-color: #0056b3;
+}
